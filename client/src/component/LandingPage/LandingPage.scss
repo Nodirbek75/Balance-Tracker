@@ -1,0 +1,155 @@
+@import '../../style/mixen';
+@import '../../style/animations';
+
+.LandingPage{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    &__container{
+        width: 90%;
+        height: 90vh;
+        position: absolute;
+        @include setCenter
+    }
+    &__outerBox{
+        width: 75%;
+        height: 75%;
+        background: #00416A;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right bottom, #fffc00, #799F0C, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right bottom, #fffc00, #799F0C, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        border-radius: 3px;
+        box-shadow: 0 1rem 3rem rgba(#000, .3);
+        animation: topToBottom .5s ease-in-out;
+        animation-fill-mode: backwards;
+    }
+    &__middleBox{
+        width: 75%;
+        height: 75%;
+        background: #00416A;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right bottom, #fffc00, #799F0C, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right bottom, #fffc00, #799F0C, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        position: absolute;
+        @include setCenter;
+        z-index: -1;
+        border-radius: 3px;
+        box-shadow: 0 1rem 3rem rgba(#000, .3);
+        animation: topToBottomMiddle .5s ease-in-out .5s;
+        animation-fill-mode: backwards;
+    }
+    &__innerBox{
+        width: 75%;
+        height: 75%;
+        background: #00416A;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right bottom, #fffc00, #799F0C, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right bottom, #fffc00, #799F0C, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        border-radius: 3px;
+        box-shadow: 0 1rem 3rem rgba(#000, .3);
+        animation: topToBottom .5s ease-in-out 1s;
+        animation-fill-mode: backwards;
+    }
+    &__btnBox{
+        position: absolute;
+        top: 65%;
+        left: 65%;
+        transform: translate(-65%, -65%);
+        font-size: 3rem;
+        animation: topToBottomBtn .5s ease-in-out 1.5s;
+        animation-fill-mode: backwards;
+    }
+    &__btn{
+        &,
+        &:link,
+        &:visited{
+            display: inline-block;
+            position: relative;
+            text-decoration: none;
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: 400;
+            padding: .5rem 2rem;
+            border-radius: 3rem;
+            background: #00416A;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right bottom, #fffc00, #799F0C, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right bottom, #fffc00, #799F0C, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            box-shadow: 0 2rem 4rem rgba($color: #000000, $alpha: .2);
+            transition: all .3s;
+        }
+
+        &::after{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 3rem;
+            background: #00416A;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right bottom, #fffc00, #799F0C, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right bottom, #fffc00, #799F0C, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            z-index: -1;
+            transition: all .5s ease-in-out;
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 3rem 4rem rgba($color: #000000, $alpha: .4);
+            background: #1a2a6c;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right bottom, #fffc00, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right bottom, #fffc00, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            &::after{
+                transform: scale(1.7, 2);
+                opacity: 0;
+            }
+        }
+
+        &:active{
+            transform: translateY(-2px);
+            box-shadow: 0 2.5rem 3.5rem rgba($color: #000000, $alpha: .3);
+        }
+    }
+    &__btnBox:hover ~ &__outerBox{
+        background: #1a2a6c;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right bottom, #fffc00, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right bottom, #fffc00, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    &__btnBox:hover ~ &__middleBox{
+        background: #1a2a6c;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right bottom, #fffc00, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right bottom, #fffc00, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    &__btnBox:hover ~ &__innerBox{
+        background: #1a2a6c;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right bottom, #fffc00, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right bottom, #fffc00, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+}
+
+@media(max-width: 1000px){
+    .LandingPage__btn:link{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 700px){
+    .LandingPage__btn:link{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 550px){
+    .LandingPage__btn:link{
+        font-size: .8rem;
+    }
+}

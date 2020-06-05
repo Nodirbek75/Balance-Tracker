@@ -1,0 +1,65 @@
+@keyframes topToBottomMiddle{
+    0%{
+        transform: translate(-50%, -100vh);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+@keyframes topToBottomBtn{
+    0%{
+        transform: translate(-65%, -100vh);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(-65%, -65%);
+        opacity: 1;
+    }
+}
+
+@keyframes topToBottom{
+    0%{
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bottomToTop{
+    0%{
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes leftToRight{
+    0%{
+        transform: translateX(-100vh);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rightToLeft{
+    0%{
+        transform: translateX(100vh);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

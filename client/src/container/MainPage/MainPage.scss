@@ -1,0 +1,32 @@
+@import '../../style/mixen';
+@import '../../style/animations';
+
+.CurrentBalance{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    &__box{
+        font-style: inherit;
+        text-align: center;
+        @include setCenter;
+    }
+    &__text{
+        font-size: 2.5rem;
+        font-weight: 900;
+        letter-spacing: 10px;
+        background: #833ab4;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #fffc00, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #fffc00, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-clip: text;
+        color: transparent;
+        animation: topToBottom .5s cubic-bezier(0.68, -0.6, 0.32, 1.6) .5s;
+        animation-fill-mode: backwards; 
+    }
+    &__balance{
+        font-size: 6rem;
+        font-weight: 100;
+        letter-spacing: 10px;
+        animation: topToBottom 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) .5s;
+        animation-fill-mode: backwards;
+    }
+}

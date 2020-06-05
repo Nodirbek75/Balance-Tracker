@@ -1,0 +1,44 @@
+@import '../../style/animations';
+.TransactionList{
+    width: 95%;
+    padding: 60px 30px;
+    margin: 0 auto;
+    &__currentBalance{
+        display: block;
+        text-align: center;
+        padding: 50px;
+    }
+
+    &__text{
+        font-size: 1.5rem;
+        font-weight: 900;
+        letter-spacing: 10px;
+        background: #833ab4;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #fffc00, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #fffc00, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-clip: text;
+        color: transparent;
+        animation: leftToRight .5s ease-out .5s;
+        animation-fill-mode: backwards;
+    }
+
+    &__balance{
+        font-size: 3rem;
+        font-weight: 100;
+        letter-spacing: 10px;
+        animation: rightToLeft .5s ease-out .5s;
+        animation-fill-mode: backwards;
+    }
+
+    &__btn{
+        border-radius: 0;
+    }
+
+    &__table{
+        box-shadow: 0 30px 40px rgba($color: #000000, $alpha: .3);
+        border-radius: 5px;
+        overflow: hidden;
+        animation: bottomToTop .5s ease-out .5s;
+        animation-fill-mode: backwards;
+    }
+}

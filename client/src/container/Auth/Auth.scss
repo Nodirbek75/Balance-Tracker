@@ -1,0 +1,28 @@
+@import '../../style/animations';
+
+.container{
+    width: 50%;
+    margin: 50px auto;
+    background: #fffc00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right bottom, #ffffff 0%, #ffffff 50%, #fffc00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right bottom, #ffffff 0%, #ffffff 50%, #fffc00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 3px;
+    animation: topToBottom .5s cubic-bezier(0.68, -0.6, 0.32, 1.6) .5s;
+    animation-fill-mode: backwards;
+    padding: 30px ;
+    &__btn{
+        margin: 20px 0 0;
+    }
+
+    &__alert{
+        animation: leftToRight .2s ease-in-out;
+        animation-fill-mode: backwards;
+    }
+}
+
+@media(max-width: 900px){
+    .container{
+        width: 90%;
+    }
+}
+
