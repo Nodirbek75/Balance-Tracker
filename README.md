@@ -1,5 +1,5 @@
 # Balance Tracker
-Balance Tracker app built with the MERN stack along with Redux for state management, Paspport.js for authentication,Bootstrap and Scss.
+Balance Tracker app built with the MERN stack along with Redux for state management, Paspport.js for authentication, Bootstrap and Scss.
 
 ## Quick Start
 Add your MONGO_URI to the keys.js file in config folder.
