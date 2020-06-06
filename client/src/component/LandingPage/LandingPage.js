@@ -11,7 +11,6 @@ const LandingPage = () => (
             <div className={'LandingPage__outerBox'}></div>
             <div className={'LandingPage__middleBox'}></div>
             <div className={'LandingPage__innerBox'}></div>
-            
         </div>
     </div>
 )
