@@ -27,6 +27,6 @@ There is a Heroku post build script so that you do not have to compile your Reac
 ## App Info
 
 ### Author
-Nodirbek Jamoldinov https://nodirbek.com/
+Nodirbek Jamoldinov [Nodirbek](https://nodirbek.com/)
 ### Version
 1.0.0
