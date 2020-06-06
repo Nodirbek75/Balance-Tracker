@@ -83,7 +83,7 @@ class Transaction extends Component{
                         <input type="text" className="form-control" id="exampleInputPassword1" value={this.state.description} onChange={this.onDescriptionChange}/>
                     </div>
                     
-                    <button type="submit" className="btn btn-primary">Submit</button>
+                    <button type="submit" className="btn btn-dark">Submit</button>
                 </form>
             </div>
         )

@@ -43,7 +43,7 @@ class Login extends Component{
                 {error}
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
-                        <label htmlFor="exampleInputEmail1">Email address</label>
+                        <label htmlFor="exampleInputEmail1">Username</label>
                         <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={this.state.username} onChange={this.onUsernameChange}/>
                     </div>
                     <div className="form-group">
@@ -55,10 +55,10 @@ class Login extends Component{
                             <label htmlFor="exampleInputBalance">Current Balance</label>
                             <input type="number" className="form-control" id="exampleInputBalance" value={this.state.currentBalance} onChange={this.onCurrentBalanceChange} required/>
                         </div> : null}
-                    <button type="submit" className="btn btn-primary">Submit</button>
+                    <button type="submit" className="btn btn-dark">Submit</button>
                 </form>
                 <button 
-                        className="btn btn-primary container__btn"
+                        className="btn btn-dark container__btn"
                         onClick={this.switchAuthModeHandler}>
                             Switch To {this.state.isSignUp ? 'Sign In' : 'Sign Up'}
                 </button>
